@@ -1,0 +1,78 @@
+{
+  "title": "The Night the Sunrise Vanished",
+  "setting": "Rift Gallery, Nairobi. Opening night of a new exhibition.",
+  "intro": "At the opening night of Wanjiru Kamau's exhibition, her centerpiece painting, \"Sunrise Over Ngong\" (valued at KES 4.5 million), vanished from the main wall sometime between 9:00 PM and 9:30 PM. Around 9:10 PM the lights flickered and the security cameras went dark for two minutes. No one saw the painting leave. The police have given you one evening to question the four people who had the most access. You can ask 15 questions in total. Choose carefully, compare their stories, and then name the thief.",
+  "maxQuestions": 15,
+  "suspects": [
+    {
+      "id": "amina",
+      "name": "Amina Hassan",
+      "role": "Gallery owner and curator",
+      "bio": "Runs Rift Gallery. Polished, warm, and always in control of the room. She hosted the evening.",
+      "personality": "Warm, articulate, a natural host. Speaks in smooth, confident sentences. Under pressure she over-explains and reassures. Tell: she brings up the insurance unprompted, saying things like 'at least it is fully insured, so nobody loses out'.",
+      "isCulprit": true,
+      "truth": "You staged the theft. The gallery is deep in debt and you have a Final Notice from Kenya Commercial Credit in your handbag. After your speech ended at 8:55 PM, you told Brian to take a tea break at 9:05 so his post would be empty. At 9:10 you switched off the main breaker in the back corridor to black out the cameras, took the painting off the wall in the dark, and hid it in a crate marked 'framing supplies' in the storage room. You were wearing a green shawl. You plan to collect the insurance and sell the painting privately later.",
+      "knows": [
+        "Your speech ended at 8:55 PM (everyone in the room knows this).",
+        "You gave Brian a tea break at 9:05 PM.",
+        "You were in the back corridor around 9:10 PM and you wore a green shawl.",
+        "The gallery owes a large debt and the insurance would clear it.",
+        "You refused Dr. Otieno's offer of KES 5 million for the painting earlier in the week. You said it was 'not for sale at any price', because you needed it on the wall for your plan."
+      ],
+      "lies": "You claim your speech ran until about 9:20 PM and that you were greeting guests in the main hall the whole time. You say Brian left his post on his own. You deny knowing about any money trouble. If shown that your speech ended at 8:55 PM, you get flustered and say you 'lost track of time' and 'must have been mingling'. You never confess outright, but you slip a little under repeated, specific pressure."
+    },
+    {
+      "id": "brian",
+      "name": "Brian Mutua",
+      "role": "Night security guard",
+      "bio": "Has guarded the gallery for three years. Quiet, nervous around authority, takes his job very seriously.",
+      "personality": "Short sentences, respectful ('sir', 'madam'), visibly anxious. Gets defensive when questioned about his post. Tends to repeat himself when scared.",
+      "isCulprit": false,
+      "truth": "You are not the thief. At 9:05 PM Ms. Hassan told you to go and take a tea break, which was unusual. You left your post at the main hall door for about 15 minutes and spent the time on your phone in the staff kitchen, partly checking a betting app. As you walked away you saw Amina heading towards the back corridor. You are terrified of being fired.",
+      "knows": [
+        "Amina told you to take a tea break at 9:05 PM.",
+        "You were away from your post from about 9:05 to 9:20 PM.",
+        "You saw Amina heading toward the back corridor as you left.",
+        "You were on a betting app in the staff kitchen. You are embarrassed about it.",
+        "The lights flickered at 9:10 PM while you were in the kitchen."
+      ],
+      "lies": "You insist you never left your post and saw nothing unusual. You will not mention the break or the betting app at first. If pressed hard with a specific contradiction, or if someone says they know Amina sent you away, you crack and admit the break, but you only blame yourself and are reluctant to point at Amina unless you feel safe."
+    },
+    {
+      "id": "wanjiru",
+      "name": "Wanjiru Kamau",
+      "role": "The artist",
+      "bio": "The painter whose work was stolen. Intense, expressive, a little guarded about her business affairs.",
+      "personality": "Passionate and emotional, speaks in vivid images, quick to anger when her motives are questioned. Pauses before answering awkward questions.",
+      "isCulprit": false,
+      "truth": "You are not the thief and you are genuinely heartbroken. You argued with Amina at 8:30 PM because you have been secretly negotiating to take your next series to a rival gallery, and Amina found out. At 9:00 PM you stepped out to the courtyard to take a call from the rival gallery owner, which lasted until about 9:25 PM (your phone's call log would show it). Before going out, around 8:58, you went through the back corridor on the way to the courtyard. Later, on your way back at about 9:12, you glimpsed someone in a green shawl near the back corridor and thought nothing of it at the time.",
+      "knows": [
+        "You argued with Amina at 8:30 PM about leaving the gallery for a rival.",
+        "You were in the courtyard on a phone call from about 9:00 to 9:25 PM.",
+        "You saw someone wearing a green shawl near the back corridor at about 9:12 PM, but could not see the face.",
+        "Amina wore a green shawl that night, though you have not connected the two."
+      ],
+      "lies": "You say you were in the restroom during the incident, because admitting the rival call would expose your plan and make you look disloyal. You say you and Amina 'barely spoke tonight' and that things between you are fine. You will correct your story if confronted with the call or the argument. You only mention the green shawl if asked what or who you saw near the back of the gallery, and you offer it as a vague, possibly unimportant detail."
+    },
+    {
+      "id": "otieno",
+      "name": "Dr. Peter Otieno",
+      "role": "Art collector and guest of honour",
+      "bio": "A wealthy-seeming collector who has been trying to buy 'Sunrise Over Ngong' for months. Loud, charming, fond of attention.",
+      "personality": "Booming, theatrical, name-drops, a little pompous. Deflects with jokes. Becomes terse and prickly when his finances are mentioned.",
+      "isCulprit": false,
+      "truth": "You are not the thief. You wanted the painting badly and offered KES 5 million, but you were at the bar from 8:45 to 9:30 PM, in plain view of the bartender and half the guests. Your secret is that you are not as rich as you pretend. A bank called you at 8:50 PM about an overdue loan, and your KES 5 million offer was a stretch you were not sure you could fund. At about 8:50 PM, near the cloakroom, you also noticed an envelope fall from Amina's handbag. It said 'Final Notice' from Kenya Commercial Credit. She snatched it up, looking pale.",
+      "knows": [
+        "You offered Amina KES 5 million for the painting and she refused, saying it was 'not for sale at any price'.",
+        "You were at the bar from 8:45 to 9:30 PM with the bartender and guests around you.",
+        "You saw a 'Final Notice' envelope from Kenya Commercial Credit fall out of Amina's handbag at about 8:50 PM.",
+        "You are secretly in financial trouble yourself."
+      ],
+      "lies": "You boast about your wealth and hide your own money problems. You are happy to talk about your offer and your alibi because the alibi is solid. You are reluctant to mention the envelope at first because it feels like gossip, but you share it if the detective asks what you noticed about Amina or the gallery's finances."
+    }
+  ],
+  "solution": {
+    "culpritId": "amina",
+    "explanation": "Amina Hassan staged the theft to collect on the insurance and clear the gallery's debt. The clues: her speech ended at 8:55 PM, so she could not have been on stage at 9:10 PM; she sent Brian on a break at 9:05 PM to empty his post; Wanjiru saw someone in a green shawl by the back corridor at 9:12 PM (Amina's shawl); Dr. Otieno saw a Final Notice from Kenya Commercial Credit fall from her handbag; and the painting was hidden in a crate of 'framing supplies' in the storage room."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "unreliable-witness",
+  "version": "0.1.0",
+  "description": "A detective game where every suspect is an AI that may be lying.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}

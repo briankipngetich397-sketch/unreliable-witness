@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Unreliable Witness</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2312141a'/%3E%3Crect x='7' y='8' width='18' height='13' fill='none' stroke='%23d9a441' stroke-width='2' stroke-dasharray='3 2'/%3E%3Ccircle cx='16' cy='26' r='2' fill='%23d9a441'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1 id="caseTitle">The Unreliable Witness</h1>
+      <p id="caseSetting" class="muted"></p>
+    </div>
+    <div class="counter">Questions left: <strong id="qLeft">15</strong></div>
+  </header>
+
+  <section id="briefing" class="briefing">
+    <div id="introStage" class="stage hero"></div>
+    <p id="introText"></p>
+    <button id="startBtn" class="primary">Begin the investigation</button>
+    <p class="notice">For players aged 18 and over. The suspects' answers are written by Google's Gemini AI, so your questions are sent to Google. Please do not type personal information such as real names, phone numbers or passwords.</p>
+  </section>
+
+  <main id="game" class="game hidden">
+    <aside class="suspects" id="suspectList" aria-label="Suspects"></aside>
+
+    <section class="interview">
+      <div id="stage" class="stage">
+        <div class="tag">
+          <h2 id="activeName">Choose a suspect</h2>
+          <p id="activeRole" class="muted">Pick someone on the left to begin</p>
+        </div>
+      </div>
+      <div id="chat" class="chat" aria-live="polite"></div>
+      <form id="askForm" class="ask">
+        <input id="askInput" type="text" maxlength="500" autocomplete="off" placeholder="Ask a question..." disabled>
+        <button id="askBtn" class="primary" disabled>Ask</button>
+      </form>
+      <p class="hint muted">Tip: click any suspect reply to pin it to your notebook.</p>
+    </section>
+
+    <aside class="notebook">
+      <h2>Notebook</h2>
+      <div id="pins" class="pins"><p class="muted">Pinned statements will appear here.</p></div>
+      <label for="notes" class="muted">Your notes</label>
+      <textarea id="notes" placeholder="Timelines, contradictions, hunches..."></textarea>
+      <button id="accuseBtn" class="danger">Make an accusation</button>
+    </aside>
+  </main>
+
+  <dialog id="accuseDialog">
+    <form method="dialog" id="accuseForm">
+      <h2>Who stole the painting?</h2>
+      <p class="muted">You only get one accusation.</p>
+      <div id="accuseOptions" class="options"></div>
+      <div class="dialog-actions">
+        <button value="cancel" class="ghost">Keep investigating</button>
+        <button id="confirmAccuse" value="confirm" class="danger">Accuse</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="resultDialog">
+    <div id="resultStage" class="stage result-stage"></div>
+    <div id="resultBody"></div>
+    <div class="dialog-actions">
+      <button id="playAgain" class="primary">Play again</button>
+    </div>
+  </dialog>
+
+  <script src="art.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
